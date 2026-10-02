@@ -1,0 +1,52 @@
+{
+  "resources": [
+    {
+      "name": "Library",
+      "aliases": ["lib", "library", "media center"],
+      "location": "525 Falconer Street, Jamestown",
+      "hours": "Closed Sunday and Saturday. 8AM - 5PM Monday - Thursday. Friday  8AM - 4PM",
+      "phone": "7163381008",
+      "email": "REPLACE WITH ACTUAL EMAIL",
+      "website": "https://www.sunyjcc.edu/support/learning-commons/library",
+      "description": "Study spaces, research help, and computer access.",
+      "verified_by": "Zico Browne",
+      "last_verified": "2026-09-27"
+    },
+    {
+      "name": "Tutoring Center",
+      "aliases": ["tutoring", "tutor", "academic support"],
+      "location": "Jamestown CampusHULT Floor 1",
+      "hours": "Closed Sunday and Saturday. 9AM - 5PM Mon - Fri ",
+      "phone": "7163381008",
+      "email": "REPLACE WITH ACTUAL EMAIL",
+      "website": "https://www.sunyjcc.edu/support/learning-commons/learning-center",
+      "description": "Free tutoring for currently enrolled students.",
+      "verified_by": "Zico Browne",
+      "last_verified": "2026-09-27"
+    },
+    {
+      "name": "Academic Advising",
+      "aliases": ["advising", "advisor", "counselor"],
+      "location": "Jamestown Campus & OnlineCOCE Floor 1",
+      "hours": "Closed Sunday and Saturday. 9AM - 5PM Mon - Fri",
+      "phone": "7163760620",
+      "email": "REPLACE WITH ACTUAL EMAIL",
+      "website": "https://www.sunyjcc.edu/support/success-center/advising",
+      "description": "Help with degree planning and course selection.",
+      "verified_by": "Zico Browne",
+      "last_verified": "2026-09-27"
+    },
+    {
+      "name": "Financial Aid Office",
+      "aliases": ["financial aid", "fafsa", "grants", "scholarships"],
+      "location": "Jamestown Campus: COCE Floor 1",
+      "hours": "Closed Sunday and Saturday. 9AM - 5PM Mon - Fri ",
+      "phone": "7163381009",
+      "email": "REPLACE WITH ACTUAL EMAIL",
+      "website": "https://www.sunyjcc.edu/support/financial-aid-billing",
+      "description": "Financial aid applications, grants, and scholarship information.",
+      "verified_by": "Zico Browne",
+      "last_verified": "2026-09-27"
+    }
+  ]
+}

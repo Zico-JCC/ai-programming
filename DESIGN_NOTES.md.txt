@@ -1,0 +1,22 @@
+﻿1. In one paragraph, restate the problem the Student Services office asked us to solve.
+* The Student Services office wants us to create an AI agent that can retrieve information about the college’s library, tutoring center, advising office, and other resources. The issue they are having is that they offer resources to students that are currently being under-utilized due to unawareness. Instead of relying on students to discover this information on their own chatbot that can give insight on the services provided. It will  use natural language so that  it will be easier for student to get the information 
+
+
+2. Why can an LLM like Gemini answer general questions but not campus-specific questions by itself?
+* Gemini is more than capable of understanding natural language, but it is limited by the information that is available to it or that it is enabled to access. An account is required to access the website information, so it is not publicly accessible to Gemini. 
+
+
+3. List at least three reasons the campus data is stored in a JSON file rather than written directly inside the Python function.
+* It separates data from logic.
+* It makes the information independently reviewable. 
+* It prepares the project for growth. 
+
+
+4. Choose three limitations from the table above. For each one, explain one concrete way the team could improve the system in a future version.
+* Limitation: The data can become stale.  Improvement: The data can be pulled from a live feed. 
+* Limitation: The agent has no long-term memory of past conversations. Improvement: Approved session logs can be stored.
+* Limitation: Rate limits may pause heavy use. Improvement: Use of a queue or caching repeated questions.
+
+
+5. What could go wrong if the campus information in our JSON file is inaccurate? Who should be responsible for verifying it?
+* If the campus information in our JSON file is inaccurate, the AI will confidently return false information. The developer should be responsible for verification. Because the accurate information is available to many, others would be able to catch false information.

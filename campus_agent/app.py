@@ -13,7 +13,7 @@ import asyncio
 import os
 
 # ADK imports
-from google.adk.runners.runner import Runner
+from google.adk.runners import Runner
 from google.adk.sessions.in_memory_session_service import InMemorySessionService
 from google.adk.artifacts.in_memory_artifact_service import InMemoryArtifactService
 from google.genai import types
@@ -26,12 +26,12 @@ from agent import root_agent, RESOURCE_FILE
 # Handle API key for both local development and Streamlit Cloud deployment
 if "GOOGLE_API_KEY" not in os.environ:
     # Try Streamlit secrets first (for deployment)
-    try:
-        os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
-    except (KeyError, AttributeError):
+    #try:
+        #os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+    #except (KeyError, AttributeError):
         # Fall back to .env file (for local development)
-        from dotenv import load_dotenv
-        load_dotenv()
+    from dotenv import load_dotenv
+    load_dotenv()
 
 # Verify API key is available before proceeding
 if "GOOGLE_API_KEY" not in os.environ or not os.environ["GOOGLE_API_KEY"]:

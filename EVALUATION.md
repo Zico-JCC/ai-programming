@@ -18,3 +18,8 @@
 
 ## 4. Impact on Students at JCC
 - **Outcome & Value:** Gives Jamestown Community College (JCC) students a quick, conversational way to look up accurate hours, locations, contact details, and links for campus resources (such as the Library, Tutoring Center, Academic Advising, and Financial Aid) without digging through multiple web pages, supported by automated tests and continuous deployment.
+## Testing, CI/CD, and Deployment Updates (Lab 4)
+- **Entrypoint & Async Fix (`campus_agent/appupdated.py`):** Switched the Streamlit Community Cloud deployment from `campus_agent/app.py` to the instructor-provided `campus_agent/appupdated.py` (`main` branch, Python `3.11.18`) to resolve nested `asyncio.run()` event loop errors.
+- **Session State Cache Fix:** Updated the session state cache key in `campus_agent/appupdated.py` from `"response.cache"` to `"response_cache"` so cached responses persist across Streamlit reruns and clear properly.
+- **Model Configuration (`campus_agent/agent.py`):** Updated `campus_resource_agent` to use `gemini-3.6-flash` (commit `a52aa3e`) and verified responses on the live Streamlit app (`https://ai-programming-ifdrcgr2sd2skgeljuc7fh.streamlit.app/`).
+- **Testing & CI Observations:** Verified all 5 unit tests pass locally via `pytest` and via GitHub Actions (`Run Agent Tests` workflow on `main`). Observed a transient `503 UNAVAILABLE` high-demand response from the model API during post-redeploy testing, confirming the app code itself remained intact.

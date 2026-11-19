@@ -91,9 +91,11 @@ def get_or_create_session():
     session_service = st.session_state.session_service
     
     if "session_id" not in st.session_state:
-        session = session_service.create_session(
-            app_name=APP_NAME,
-            user_id=USER_ID
+        session = asyncio.run(
+            session_service.create_session(
+                app_name=APP_NAME,
+                user_id=USER_ID
+            )
         )
         st.session_state.session_id = session.id
     

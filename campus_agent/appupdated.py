@@ -7,7 +7,7 @@ This file connects to the Campus Resource Assistant agent from Lab 2.
 Author: [Student Name]
 Course: AI Programming
 """
-# Version 1.2 - switched to appupdated.py
+# Version 1.3 - verify auto-redeploy
 
 import streamlit as st
 import asyncio
